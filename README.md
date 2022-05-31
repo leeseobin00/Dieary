@@ -14,8 +14,11 @@ E-mail: cha-conne@naver.com
 Name : 조민지
 E-mail: whalswl0110@gmail.com
 
+![image](https://user-images.githubusercontent.com/83347874/171157794-8991f8f5-382d-44e8-830d-56809397abcf.png)
+
+
 ### Function Description
-1. Alarm funtion
+1. Alarm funtion <식사하기>
 Notify to users some information.
 
 :User can set what time user want to eat
@@ -24,7 +27,7 @@ Notify to users some information.
 
 :Alarms are given over time
 
-2. Scream Detection
+2. Scream Detection <식사하기>
 To restrict phone, trees grow when user don’t use phone
 
 :Animation trees grow as long as the user does not touch the screen
@@ -33,7 +36,7 @@ To restrict phone, trees grow when user don’t use phone
 
 :A picture of a tree is saved in the Database
 
-3. Record on Calendar
+3. Record on Calendar <캘린더 보기>
 Store food, calories and speed of eating in a calendar for a day 
 
 :On the calendar, user can enter a note on any day if user press the save button
@@ -44,7 +47,7 @@ Store food, calories and speed of eating in a calendar for a day
 
 :User can share it with user’s friends by clicking the share button
 
-4. Calculate Calories
+4. Calculate Calories <계산하기>
 Calculate and record the calories of food
 
 :Food and calorie note is saved if user type in the food and calories fields
