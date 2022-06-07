@@ -59,3 +59,8 @@ Calculate and record the calories of food
 ## Application
 #### The final version of Aplication in on cal_calculator branch
 #### Go to cal_calculator branch, Download it, And try it!
+
+## APPENDIX
+ALL Imfomations in this app are based on study, "Effects of changes in eating speed on obesity in patients with diabetes: a secondary analysis of longitudinal health check-up data" by Dr.Yumi Hurst, Haruhisa Fukuda
+
+Check this link: https://bmjopen.bmj.com/content/8/1/e019589
