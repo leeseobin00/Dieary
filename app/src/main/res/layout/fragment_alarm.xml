@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="top">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="꼭꼭씹기!"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:layout_marginBottom="10dp"/>
+
+    <!--식사시간 설정-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="현재시각"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="#009900"/>
+
+        <TextView
+            android:id="@+id/Date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello world"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="#009900"/>
+
+        <TimePicker
+            android:id="@+id/time_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="158dp"
+            android:layout_gravity="center"
+            android:timePickerMode="spinner" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="식사 종료 시간 설정"
+            android:textSize="20dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="식사 시간은 20분 이상을 권장합니다"
+            android:textSize="20dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:background="#009900" />
+
+    <!-- 씹는 시간 설정-->
+    <LinearLayout
+        android:id="@+id/timeCountSettingLV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <EditText
+            android:id="@+id/secondET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="20"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <!-- 실제 줄어드는 타이머-->
+    <LinearLayout
+        android:id="@+id/timeCountLV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/secondTV"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="씹는 시간은 20초 이상을 권장합니다"
+        android:textSize="20dp"
+        android:gravity="center"/>
+
+    <!--식사 시작과 종료 버튼 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_start"
+            android:layout_weight="1"
+            android:text="식사 시작"/>
+
+        <Button
+            android:id="@+id/btn_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="식사 종료" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
